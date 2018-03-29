@@ -23,8 +23,12 @@ class Solution(object):
         self.visited.append(u)
         self.cost+=self.g.get_edge(v,u).cost
 
+
     def toString(self):
-        print(str(self.visited[-1]))
-        for edge in self.visited:
-            print(str(edge) + "\n")
-        print("COST = " + str(self.cost))
+        if len(self.visited)>0:
+            print(str(self.visited[-1]))
+            for edge in self.visited:
+                print(str(edge) + "\n")
+            print("COST = " + str(self.cost))
+        else:
+            return

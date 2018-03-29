@@ -13,7 +13,7 @@ class Graph(object):
         f = open(file, 'r')
         self.N = int(f.readline())
         self.edges = []
-        self.costs =  np.zeros((self.N, self.N))
+        self.costs = np.zeros((self.N, self.N))
         for i in range(self.N):
             l = f.readline()
             a = l.split(" ")
